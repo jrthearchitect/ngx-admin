@@ -2,12 +2,6 @@ import { NbMenuItem } from '@nebular/theme';
 
 export const MENU_ITEMS: NbMenuItem[] = [
   {
-    title: 'Expense Manager',
-    icon: 'nb-e-commerce',
-    link: '/pages/dashboard',
-    home: true,
-  },
-  {
     title: 'Cloud Deployment Wizard',
     icon: 'nb-compose',
     children: [
@@ -17,6 +11,13 @@ export const MENU_ITEMS: NbMenuItem[] = [
       },
     ],
   },
+  {
+    title: 'Expense Manager',
+    icon: 'nb-e-commerce',
+    link: '/pages/dashboard',
+    home: true,
+  },
+
   /*
   {
     title: 'Components',

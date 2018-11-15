@@ -1,38 +1,19 @@
 <div class="row">
-  <div class="col-md-12">
-    <nb-card class="inline-form-card">
-      <nb-card-header>Inline form</nb-card-header>
-      <nb-card-body>
-        <form class="form-inline">
-          <input type="text" class="form-control full-width" placeholder="Jane Doe">
-          <div class="input-group full-width">
-            <div class="input-group-addon">@</div>
-            <input type="text" class="form-control" placeholder="Email">
-          </div>
-          <nb-checkbox>Remember me</nb-checkbox>
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-      </nb-card-body>
-    </nb-card>
-  </div>
-</div>
-
-<div class="row">
   <div class="col-md-6">
     <nb-card>
-      <nb-card-header>Using the Grid</nb-card-header>
+      <nb-card-header>Billing and Location Settings for Deployment</nb-card-header>
       <nb-card-body>
         <form>
           <div class="form-group row">
-            <label for="inputEmail1" class="col-sm-3 col-form-label">Email</label>
+            <label for="inputEmail1" class="col-sm-3 col-form-label">EAI-CODE</label>
             <div class="col-sm-9">
-              <input type="email" class="form-control" id="inputEmail1" placeholder="Email">
+              <input type="email" class="form-control" id="inputEmail1" placeholder="EAI">
             </div>
           </div>
           <div class="form-group row">
-            <label for="inputPassword2" class="col-sm-3 col-form-label">Password</label>
+            <label for="inputPassword2" class="col-sm-3 col-form-label">DPC-CODE</label>
             <div class="col-sm-9">
-              <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+              <input type="password" class="form-control" id="inputPassword2" placeholder="DPC">
             </div>
           </div>
           <div class="form-group row">
@@ -42,46 +23,45 @@
                 <label class="custom-control custom-radio">
                   <input type="radio" class="custom-control-input" name="gridRadios" checked>
                   <span class="custom-control-indicator"></span>
-                  <span class="custom-control-description">Option one is this and that&mdash;be sure to include why it's great</span>
+                  <span class="custom-control-description">AMERICAS</span>
                 </label>
               </div>
               <div class="form-check">
                 <label class="custom-control custom-radio">
                   <input type="radio" class="custom-control-input" name="gridRadios">
                   <span class="custom-control-indicator"></span>
-                  <span class="custom-control-description">Option two can be something else and selecting it will deselect option one</span>
+                  <span class="custom-control-description">EMEA</span>
                 </label>
               </div>
-              <div class="form-check disabled">
+              <div class="form-check">
                 <label class="custom-control custom-radio">
-                  <input type="radio" class="custom-control-input" name="gridRadios" disabled>
+                  <input type="radio" class="custom-control-input" name="gridRadios" >
                   <span class="custom-control-indicator"></span>
-                  <span class="custom-control-description">Option three is disabled</span>
+                  <span class="custom-control-description">ASIA</span>
                 </label>
               </div>
             </div>
           </div>
-          <div class="form-group row">
-            <div class="offset-sm-3 col-sm-9">
-              <button type="submit" class="btn btn-primary">Sign in</button>
-            </div>
-          </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
         </form>
       </nb-card-body>
     </nb-card>
 
     <nb-card>
-      <nb-card-header>Form without labels</nb-card-header>
+      <nb-card-header>Search Deployment Inventory</nb-card-header>
       <nb-card-body>
         <form>
           <div class="form-group">
-            <input type="text" class="form-control" placeholder="Recipients">
+            <input type="text" class="form-control" placeholder="EAI-CODE">
           </div>
           <div class="form-group">
-            <input type="text" class="form-control" placeholder="Subject">
+            <input type="text" class="form-control" placeholder="DPC-CODE">
           </div>
           <div class="form-group">
-            <textarea class="form-control" placeholder="Message"></textarea>
+              <input type="text" class="form-control" placeholder="APP NAME">
+            </div>
+          <div class="form-group">
+            <textarea class="form-control" placeholder="Type of Service"></textarea>
           </div>
           <button type="submit" class="btn btn-success">Send</button>
         </form>
@@ -90,95 +70,34 @@
   </div>
 
   <div class="col-md-6">
-    <nb-card>
-      <nb-card-header>Basic form</nb-card-header>
-      <nb-card-body>
-        <form>
-          <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-          </div>
-          <div class="form-group">
-            <label for="exampleInputPassword1">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-          </div>
-          <div class="form-group">
-            <nb-checkbox>Check me out</nb-checkbox>
-          </div>
-          <button type="submit" class="btn btn-danger">Submit</button>
-        </form>
-      </nb-card-body>
-    </nb-card>
+      <nb-card>
+          <nb-card-header>Application Blueprints</nb-card-header>
+          <nb-card-body>
+            <div class="form-group">
+              <label>Application Blueprints</label>
+              <select class="form-control">
+                <option>Application Blueprint 1</option>
+                <option>Application Blueprint 2</option>
+                <option>Application Blueprint 3</option>
+                <option>Application Blueprint 4</option>
+                <option>New 3 Tier App Blueprint</option>
+              </select>
+              <button type="submit" class="btn btn-success">Send</button>
 
-    <nb-card>
-      <nb-card-header>Block form</nb-card-header>
-      <nb-card-body>
-        <div class="row">
-          <div class="col-sm-6">
-            <div class="form-group">
-              <label for="inputFirstName">First Name</label>
-              <input type="text" class="form-control" id="inputFirstName" placeholder="First Name">
             </div>
-          </div>
-          <div class="col-sm-6">
             <div class="form-group">
-              <label for="inputLastName">Last Name</label>
-              <input type="text" class="form-control" id="inputLastName" placeholder="Last Name">
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-6">
-            <div class="form-group">
-              <label for="inputEmail">Email</label>
-              <input type="email" class="form-control" id="inputEmail" placeholder="Email">
-            </div>
-          </div>
-          <div class="col-sm-6">
-            <div class="form-group">
-              <label for="inputWebsite">Website</label>
-              <input type="text" class="form-control" id="inputWebsite" placeholder="Website">
-            </div>
-          </div>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </nb-card-body>
-    </nb-card>
-  </div>
-</div>
+              <label>Custom PaaS Deployment</label>
+              <select multiple class="form-control">
+                <option>WebApp</option>
+                <option>SQLDB</option>
+                <option>Service Bus</option>
+                <option>Redis</option>
+                <option>CosmosDB</option>
+              </select>
+                </div>
+                <button type="submit" class="btn btn-success">Send</button>
 
-<div class="row">
-  <div class="col-md-6">
-    <nb-card>
-      <nb-card-header>Horizontal form</nb-card-header>
-      <nb-card-body>
-        <form class="form-horizontal">
-          <div class="form-group row">
-            <label for="inputEmail3" class="col-sm-3 form-control-label">Email</label>
-            <div class="col-sm-9">
-              <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-            </div>
-          </div>
-          <div class="form-group row">
-            <label for="inputPassword3" class="col-sm-3 form-control-label">Password</label>
-            <div class="col-sm-9">
-              <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
-            </div>
-          </div>
-          <div class="form-group row">
-            <div class="offset-sm-3 col-sm-9">
-              <div class="checkbox">
-                <nb-checkbox>Remember me</nb-checkbox>
-              </div>
-            </div>
-          </div>
-          <div class="form-group row">
-            <div class="offset-sm-3 col-sm-9">
-              <button type="submit" class="btn btn-warning">Sign in</button>
-            </div>
-          </div>
-        </form>
-      </nb-card-body>
-    </nb-card>
+          </nb-card-body>
+        </nb-card>
   </div>
 </div>
